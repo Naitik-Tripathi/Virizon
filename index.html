@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#126b4b">
+<meta name="description" content="Virizon is a B2B marketplace concept for businesses to discover, list, and request industrial by-products and reusable materials.">
+<title>Virizon | Industrial Material Exchange</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Virizon home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path fill="#126b4b" d="M20 2C9 4 3 13 5 23c1 7 7 12 15 12 10 0 17-8 17-19V5C30 6 24 5 20 2Z"/><path d="M10 29 29 10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/><path d="M18 18c2-6 7-9 12-9" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round"/></svg>
+      <span>Virizon</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#materials">Materials</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#for-business">For businesses</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-secondary" type="button" data-login-demo>Log in</button>
+      <button class="btn btn-primary" type="button" data-open-join>Join platform</button>
+      <button class="menu-toggle" type="button" aria-label="Open registration" data-open-join>Join</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Industrial material exchange</p>
+        <h1>Find a buyer for usable industrial by-products.</h1>
+        <p>Virizon is a business-to-business marketplace concept where companies can list surplus materials, discover potential suppliers, and send purchase requests from one place.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" data-open-join>Create a company profile</button>
+          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="hero-note">Prototype preview. Listings, verification, and transactions are not connected to a live backend yet.</p>
+      </div>
+
+      <div class="supply-panel" aria-label="Example material categories">
+        <div class="panel-head">
+          <div>
+            <h2>Explore material categories</h2>
+            <p>Start with the material your business handles.</p>
+          </div>
+          <span class="status-label">Marketplace preview</span>
+        </div>
+
+        <div class="material-list">
+          <div class="material-row">
+            <div class="material-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="m7 4 10 0 3 5-4 2-2-3H9l-2 3-4-2 4-5Z"/>
+                <path d="M8 12v7h8v-7M10 15h4"/>
+              </svg>
+            </div>
+            <div class="material-copy">
+              <strong>Metal and alloys</strong>
+              <span>Offcuts, scrap, and recoverable metal</span>
+            </div>
+            <span class="material-tag">Category</span>
+          </div>
+
+          <div class="material-row">
+            <div class="material-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M8 3h8l2 4-2 2 3 5-3 6H8l-3-6 3-5-2-2 2-4Z"/>
+                <path d="M9 9h6M8 14h8"/>
+              </svg>
+            </div>
+            <div class="material-copy">
+              <strong>Plastic and polymers</strong>
+              <span>Production scrap and sorted plastics</span>
+            </div>
+            <span class="material-tag">Category</span>
+          </div>
+
+          <div class="material-row">
+            <div class="material-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M6 3h9l4 4v14H6z"/>
+                <path d="M15 3v5h4M9 12h7M9 16h7"/>
+              </svg>
+            </div>
+            <div class="material-copy">
+              <strong>Paper and packaging</strong>
+              <span>Cardboard, paper trim, and packaging</span>
+            </div>
+            <span class="material-tag">Category</span>
+          </div>
+
+          <div class="material-row">
+            <div class="material-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <rect x="4" y="5" width="16" height="14" rx="1"/>
+                <path d="M8 9h3v3H8zM14 9h2M14 12h2M8 15h8"/>
+              </svg>
+            </div>
+            <div class="material-copy">
+              <strong>Electrical and electronic</strong>
+              <span>Equipment and components for compliant recovery</span>
+            </div>
+            <span class="material-tag">Category</span>
+          </div>
+        </div>
+
+        <div class="panel-foot">Categories are illustrative. Availability depends on future verified supplier listings.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="materials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Material discovery</p>
+        <h2>Organise supply around material, quality, and location.</h2>
+        <p>Material listings are intended to give buyers the information they need to decide whether to contact a supplier. The live product should require accurate descriptions and appropriate handling details.</p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="m6 4 12 0 3 5-4 2-2-3H9l-2 3-4-2 3-5Z"/>
+              <path d="M8 12v7h8v-7"/>
+            </svg>
+          </div>
+          <h3>Metal</h3>
+          <p>Specify grade, form, quantity, and collection location.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="m8 3 8 0 3 5-2 2 2 5-3 6H8l-3-6 3-5-2-2 2-5Z"/>
+              <path d="M9 10h6M8 15h8"/>
+            </svg>
+          </div>
+          <h3>Plastics</h3>
+          <p>Identify polymer type, condition, and available volume.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M6 3h9l4 4v14H6z"/>
+              <path d="M15 3v5h4M9 12h7M9 16h7"/>
+            </svg>
+          </div>
+          <h3>Paper</h3>
+          <p>Describe paper grade, contamination, and packaging.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="4" y="5" width="16" height="14" rx="1"/>
+              <path d="M8 9h3v3H8zM14 9h2M14 12h2M8 15h8"/>
+            </svg>
+          </div>
+          <h3>Electronic materials</h3>
+          <p>Handle electronic waste only through authorised, compliant channels.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">How it works</p>
+        <h2>A simple workflow for business-to-business exchange.</h2>
+        <p>The first prototype focuses on discovery and purchase requests. Payments, logistics, and verification need secure backend services before real trades can take place.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">STEP 01</div>
+          <h3>Create a company profile</h3>
+          <p>Enter business and contact details, choose whether your company wants to buy, sell, or do both, and submit the information for review.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">STEP 02</div>
+          <h3>Publish or discover materials</h3>
+          <p>Suppliers can describe material type, quality, quantity, indicative price, and location. Buyers can filter listings against their requirements.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">STEP 03</div>
+          <h3>Send a purchase request</h3>
+          <p>Interested businesses can request quantities and discuss terms. Both parties must confirm compliance, delivery, and payment arrangements.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="for-business">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Built for industrial teams</p>
+        <h2>Useful details before the first conversation.</h2>
+        <p>Virizon is being designed around business information that helps companies assess a potential material exchange.</p>
+      </div>
+
+      <div class="principles-grid">
+        <article class="principle">
+          <h3>Clear material descriptions</h3>
+          <p>Record the material type, grade, condition, quantity, photos, and relevant handling information. Do not advertise a listing without checking its details.</p>
+        </article>
+
+        <article class="principle">
+          <h3>Business identity and review</h3>
+          <p>Company details and supporting records can help an operator review accounts. A real verification workflow must be implemented before using a verified badge.</p>
+        </article>
+
+        <article class="principle">
+          <h3>Requests before commitments</h3>
+          <p>A purchase request is an initial business conversation, not proof that payment, pickup, delivery, or a sale has been completed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Start with your company profile.</h2>
+        <p>Join the prototype and see the proposed registration flow.</p>
+      </div>
+      <button class="btn btn-primary" type="button" data-open-join>Create a company profile</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-brand">Virizon</div>
+      <div class="footer-note">Industrial material exchange prototype. No live transactions are enabled.</div>
+    </div>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <span class="footer-upcoming">Contact details to be added before launch</span>
+    </nav>
+  </div>
+</footer>
+
+<!-- Join modal. Email verification and submission are simulated locally in this prototype. -->
+<div class="modal-backdrop" id="joinBackdrop" aria-hidden="true">
+  <section class="join-modal" role="dialog" aria-modal="true" aria-labelledby="joinTitle">
+
+    <aside class="modal-visual">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path fill="#8bcba6" d="M20 2C9 4 3 13 5 23c1 7 7 12 15 12 10 0 17-8 17-19V5C30 6 24 5 20 2Z"/>
+          <path d="M10 29 29 10" stroke="#103e30" stroke-width="2.8" stroke-linecap="round"/>
+        </svg>
+        <span>Virizon</span>
+      </a>
+
+      <div class="visual-copy">
+        <p class="eyebrow">Company registration</p>
+        <h2>Give useful materials a clear next step.</h2>
+        <p>Set up a business profile to describe what your company buys or sells and start a structured material exchange.</p>
+      </div>
+
+      <div class="material-diagram" aria-hidden="true">
+        <div class="diagram-ring">
+          <div class="diagram-center">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="m16 4 6 3-3 2M22 7l3 6M25 13l-4-1M25 13l-2 5M10 8l5-3 1 4M15 5l-5 3M8 17l-1-6 4 1M7 11l-3 5M4 16l6 1M11 25l-5-4 4-2M6 21l3-4M23 22l-6 5-1-5M17 27l6-5M20 20l5 2"/>
+            </svg>
+          </div>
+        </div>
+        <span class="diagram-label one">Metal</span>
+        <span class="diagram-label two">Polymers</span>
+        <span class="diagram-label three">Paper</span>
+        <span class="diagram-label four">Components</span>
+      </div>
+
+      <div class="visual-points">
+        <div><strong>Describe</strong><span>Material and quality</span></div>
+        <div><strong>Discover</strong><span>Potential counterparties</span></div>
+        <div><strong>Request</strong><span>Start a conversation</span></div>
+      </div>
+    </aside>
+
+    <div class="modal-form-side">
+      <button class="modal-close" type="button" id="closeJoin" aria-label="Close registration">×</button>
+
+      <div class="email-stage" id="emailStage">
+        <div class="email-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="5" width="18" height="14" rx="1"/>
+            <path d="m4 7 8 6 8-6"/>
+          </svg>
+        </div>
+
+        <h2 id="joinTitle">Verify your work email</h2>
+        <p>Start with an email address used for your business. After the email step, complete your company profile.</p>
+
+        <div class="email-form">
+          <div class="field">
+            <label for="workEmail">Work email address</label>
+            <div class="email-row">
+              <input id="workEmail" type="email" autocomplete="email" placeholder="name@company.com" required>
+              <button class="btn btn-primary" id="sendDemoCode" type="button">Send code</button>
+            </div>
+            <span class="help">Prototype mode only. No email will be sent.</span>
+          </div>
+
+          <div class="otp-block" id="otpBlock">
+            <div class="field">
+              <label for="demoOtp">Demo verification code</label>
+              <input id="demoOtp" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="Enter 6-digit code">
+              <span class="help">Use 123456 to continue in this demonstration.</span>
+            </div>
+            <button class="btn btn-primary" id="verifyDemoCode" type="button">Verify email and continue</button>
+          </div>
+
+          <div class="demo-banner">This is a local prototype. Email verification is simulated and no data is sent to a server.</div>
+        </div>
+      </div>
+
+      <div id="registrationStage" style="display:none;flex:1;min-height:0;flex-direction:column">
+        <div class="form-top">
+          <div class="progress-labels" id="progressLabels">
+            <div class="progress-item active" data-progress="0"><span class="progress-number">1</span>Company</div>
+            <div class="progress-item" data-progress="1"><span class="progress-number">2</span>Business</div>
+            <div class="progress-item" data-progress="2"><span class="progress-number">3</span>Verification</div>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Registration progress" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" id="progressTrack">
+            <div class="progress-track-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <form id="registrationForm" class="registration-scroll" novalidate>
+          <h2 id="registrationTitle">Join Virizon</h2>
+          <p class="registration-intro">Complete these details for your company's profile.</p>
+
+          <div class="form-step is-active" data-step="0">
+            <div class="form-section-title">Company details</div>
+            <div class="form-grid">
+              <div class="field span-two">
+                <label for="companyName">Registered or trading company name *</label>
+                <input id="companyName" name="companyName" required autocomplete="organization" placeholder="Company name">
+              </div>
+
+              <div class="field">
+                <label for="industry">Industry *</label>
+                <select id="industry" name="industry" required>
+                  <option value="">Choose industry</option>
+                  <option>Manufacturing</option>
+                  <option>Recycling and recovery</option>
+                  <option>Construction</option>
+                  <option>Automotive</option>
+                  <option>Textiles</option>
+                  <option>Electronics</option>
+                  <option>Packaging</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="website">Company website</label>
+                <input id="website" name="website" type="url" placeholder="https://example.com">
+              </div>
+
+              <div class="field">
+                <label for="contactName">Contact person's name *</label>
+                <input id="contactName" name="contactName" required autocomplete="name">
+              </div>
+
+              <div class="field">
+                <label for="designation">Designation *</label>
+                <input id="designation" name="designation" required placeholder="Your role">
+              </div>
+
+              <div class="field">
+                <label for="phone">Business phone *</label>
+                <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="Include country code">
+              </div>
+
+              <div class="field">
+                <label for="verifiedEmail">Verified email</label>
+                <input id="verifiedEmail" name="verifiedEmail" type="email" readonly>
+              </div>
+
+              <div class="field">
+                <label for="city">City *</label>
+                <input id="city" name="city" required autocomplete="address-level2">
+              </div>
+
+              <div class="field">
+                <label for="state">State or region *</label>
+                <input id="state" name="state" required autocomplete="address-level1">
+              </div>
+
+              <div class="field">
+                <label for="country">Country *</label>
+                <input id="country" name="country" required value="India" autocomplete="country-name">
+              </div>
+
+              <div class="field span-two">
+                <label for="address">Business address *</label>
+                <textarea id="address" name="address" required autocomplete="street-address" placeholder="Street, area, and postal code"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="1">
+            <div class="form-section-title">How will your company use Virizon? *</div>
+
+            <div class="trade-options">
+              <label class="trade-option">
+                <input type="radio" name="purpose" value="Sell waste" required>
+                Sell materials
+              </label>
+              <label class="trade-option">
+                <input type="radio" name="purpose" value="Buy waste" required>
+                Buy materials
+              </label>
+              <label class="trade-option">
+                <input type="radio" name="purpose" value="Buy and sell" required>
+                Buy and sell
+              </label>
+            </div>
+
+            <div class="form-section-title">Material profile</div>
+
+            <div class="field">
+              <label for="materials">Materials you buy or sell *</label>
+              <input id="materials" name="materials" required placeholder="For example, metal offcuts, HDPE, cardboard">
+              <span class="help">Include the material types relevant to your business.</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="volume">Approximate monthly volume</label>
+                <input id="volume" name="volume" placeholder="For example, 5 tonnes">
+              </div>
+
+              <div class="field">
+                <label for="frequency">How often?</label>
+                <select id="frequency" name="frequency">
+                  <option value="Regular">Regular</option>
+                  <option value="Occasional">Occasional</option>
+                  <option value="Exploring">Still exploring</option>
+                </select>
+              </div>
+
+              <div class="field span-two">
+                <label for="storageLocation">Material storage or collection location</label>
+                <input id="storageLocation" name="storageLocation" placeholder="Warehouse, industrial area, or city">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-step" data-step="2">
+            <div class="form-section-title">Business verification details</div>
+            <p class="registration-intro">Add the business identifiers and documents needed for a later manual review. This prototype does not verify documents.</p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="gstin">GSTIN</label>
+                <input id="gstin" name="gstin" maxlength="15" placeholder="If applicable">
+                <span class="help">Do not enter a GSTIN unless it belongs to your business.</span>
+              </div>
+
+              <div class="field">
+                <label for="registrationNo">Company registration / CIN</label>
+                <input id="registrationNo" name="registrationNo" placeholder="If applicable">
+              </div>
+
+              <div class="field span-two">
+                <label for="businessDoc">Business registration document</label>
+                <input id="businessDoc" name="businessDoc" type="file" accept=".pdf,.jpg,.jpeg,.png">
+                <span class="help">Prototype only. This file will not be uploaded or stored.</span>
+              </div>
+
+              <div class="field span-two">
+                <label for="gstDoc">GST certificate</label>
+                <input id="gstDoc" name="gstDoc" type="file" accept=".pdf,.jpg,.jpeg,.png">
+                <span class="help">Optional, where applicable. This file will not be uploaded or stored.</span>
+              </div>
+            </div>
+
+            <label class="checkbox-line">
+              <input type="checkbox" id="confirmAccuracy" required>
+              <span>I confirm that I am authorised to submit these details for this business and that the information is accurate. *</span>
+            </label>
+
+            <div class="inline-error" id="finalError" role="alert">Please confirm that the details are accurate before continuing.</div>
+          </div>
+
+          <div class="inline-error" id="stepError" role="alert">Please complete the required fields to continue.</div>
+
+          <div class="form-actions">
+            <button class="btn btn-secondary" type="button" id="backStep" style="visibility:hidden">Back</button>
+            <div class="right-actions">
+              <button class="btn btn-secondary" type="button" id="cancelRegistration">Cancel</button>
+              <button class="btn btn-primary" type="button" id="nextStep">Continue</button>
+              <button class="btn btn-primary" type="submit" id="submitRegistration" style="display:none">Submit demo registration</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="success-stage" id="successStage">
+        <div class="success-check" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m4 12 5 5L20 6"/>
+          </svg>
+        </div>
+
+        <h2 id="successTitle">Demo registration complete</h2>
+        <p>Your information passed the local form checks. The live review process is not connected yet.</p>
+
+        <div class="company-id-panel">
+          <span>Your demo Company ID</span>
+          <strong id="createdCompanyId">WC-DEMO-000000</strong>
+          <button class="btn btn-secondary" type="button" id="copyCompanyId">Copy ID</button>
+        </div>
+
+        <div class="success-note">
+          <strong>Prototype notice:</strong> This Company ID is generated locally for demonstration. It is not a verified account number. Live registration, secure storage, document upload, email verification, and company review must be connected before launch.
+        </div>
+
+        <button class="btn btn-primary" type="button" id="openDashboard">Open company dashboard</button>
+        <button class="btn btn-text" type="button" id="finishJoin">Return to Virizon</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#126b4b">
+<meta name="description" content="WasteConnect company dashboard prototype.">
+<title>Company Dashboard | WasteConnect</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-body">
+<header class="site-header dash-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="WasteConnect home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path fill="#126b4b" d="M20 2C9 4 3 13 5 23c1 7 7 12 15 12 10 0 17-8 17-19V5C30 6 24 5 20 2Z"/><path d="M10 29 29 10" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/><path d="M18 18c2-6 7-9 12-9" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round"/></svg><span>WasteConnect</span></a>
+    <div class="dash-header-right"><span class="prototype-label">Prototype dashboard</span><span id="headerCompanyName" class="header-company-name">Company workspace</span><button class="btn btn-secondary" id="returnHome" type="button">Visit website</button></div>
+  </div>
+</header>
+<main class="dashboard-layout wrap" id="dashboardApp">
+  <aside class="dashboard-sidebar" aria-label="Company navigation">
+    <div class="sidebar-company"><div class="company-avatar" id="companyInitials">WC</div><div class="sidebar-company-text"><strong id="sidebarCompanyName">Your company</strong><span id="sidebarCompanyId">WC-DEMO-000000</span></div></div>
+    <nav class="dash-nav" id="dashNav">
+      <button class="dash-nav-item is-active" type="button" data-view="overview"><span class="nav-icon" aria-hidden="true">▦</span>Overview</button>
+      <button class="dash-nav-item" type="button" data-view="listings"><span class="nav-icon" aria-hidden="true">▤</span>My material listings</button>
+      <button class="dash-nav-item" type="button" data-action="create-listing"><span class="nav-icon" aria-hidden="true">＋</span>Create listing</button>
+      <button class="dash-nav-item" type="button" data-view="requests"><span class="nav-icon" aria-hidden="true">↗</span>Purchase requests</button>
+      <button class="dash-nav-item" type="button" data-view="orders"><span class="nav-icon" aria-hidden="true">▣</span>Orders</button>
+      <button class="dash-nav-item" type="button" data-view="transactions"><span class="nav-icon" aria-hidden="true">≡</span>Transactions</button>
+      <button class="dash-nav-item" type="button" data-view="profile"><span class="nav-icon" aria-hidden="true">○</span>Company profile</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-status"><span class="status-dot"></span><div><strong>Verification pending</strong><span>Manual review is not connected</span></div></div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+  </aside>
+
+  <section class="dashboard-main">
+    <div class="dashboard-notice"><strong>Prototype workspace</strong><span>This dashboard stores demo profile and listing data in this browser only. It is not connected to other companies or a live marketplace.</span></div>
+
+    <section class="dash-view is-active" data-panel="overview">
+      <div class="page-heading"><div><p class="section-kicker">Company workspace</p><h1 id="welcomeTitle">Welcome to WasteConnect</h1><p id="welcomeSubtitle">Manage company details and materials from one place.</p></div><button class="btn btn-primary" type="button" data-action="create-listing">Create material listing</button></div>
+      <div class="company-summary">
+        <div><span class="summary-label">Company ID</span><strong id="mainCompanyId">WC-DEMO-000000</strong><span class="summary-helper">Keep this ID for prototype reference.</span></div>
+        <button class="btn btn-secondary" id="copyCompanyIdMain" type="button">Copy ID</button>
+        <div class="verification-chip"><span class="status-dot"></span><div><strong>Pending verification</strong><span>Not yet reviewed by WasteConnect</span></div></div>
+      </div>
+      <div class="metric-grid">
+        <article class="metric-card"><span>Demo listings</span><strong id="listingCount">0</strong><small>Added in this browser only</small></article>
+        <article class="metric-card"><span>Purchase requests</span><strong>0</strong><small>No connected buyer requests yet</small></article>
+        <article class="metric-card"><span>Open orders</span><strong>0</strong><small>Orders are not connected yet</small></article>
+      </div>
+      <div class="dashboard-columns">
+        <section class="dash-card listing-preview"><div class="card-heading"><div><h2>Your material listings</h2><p>Materials your company has added to this demo.</p></div><button class="text-button" type="button" data-view-link="listings">View all</button></div><div id="overviewListings" class="listing-preview-content"></div></section>
+        <section class="dash-card next-steps"><div class="card-heading"><div><h2>Next steps</h2><p>Prepare the company profile for review.</p></div></div><ol><li><span>01</span><div><strong>Review company details</strong><p>Check address and contact information.</p><button type="button" data-view-link="profile">View company profile</button></div></li><li><span>02</span><div><strong>Add a material listing</strong><p>Describe quality, quantity, and collection location.</p><button type="button" data-action="create-listing">Create a listing</button></div></li><li><span>03</span><div><strong>Complete verification</strong><p>Live document review must be enabled before launch.</p><span class="pending-text">Pending setup</span></div></li></ol></section>
+      </div>
+    </section>
+
+    <section class="dash-view" data-panel="listings">
+      <div class="page-heading"><div><p class="section-kicker">Materials</p><h1>My material listings</h1><p>Keep each listing accurate so potential buyers know what is available.</p></div><button class="btn btn-primary" type="button" data-action="create-listing">Create material listing</button></div>
+      <div id="allListings" class="all-listings"></div>
+    </section>
+
+    <section class="dash-view" data-panel="requests">
+      <div class="page-heading"><div><p class="section-kicker">Incoming interest</p><h1>Purchase requests</h1><p>Requests will appear here once buyer and seller accounts are connected.</p></div></div>
+      <div class="empty-state"><div class="empty-mark">↗</div><h2>No purchase requests yet</h2><p>This prototype does not connect to other companies, so live buyer requests cannot arrive here.</p></div>
+    </section>
+
+    <section class="dash-view" data-panel="orders">
+      <div class="page-heading"><div><p class="section-kicker">Trade management</p><h1>Orders</h1><p>Track confirmed transactions here after the order workflow is implemented.</p></div></div>
+      <div class="empty-state"><div class="empty-mark">▣</div><h2>No orders yet</h2><p>Order creation, fulfilment, and delivery tracking are not connected in this prototype.</p></div>
+    </section>
+
+    <section class="dash-view" data-panel="transactions">
+      <div class="page-heading"><div><p class="section-kicker">Financial records</p><h1>Transactions</h1><p>Transaction records will appear here when a secure payment and order system exists.</p></div></div>
+      <div class="empty-state"><div class="empty-mark">≡</div><h2>No transaction records</h2><p>No payments are collected or recorded by this demo website.</p></div>
+    </section>
+
+    <section class="dash-view" data-panel="profile">
+      <div class="page-heading"><div><p class="section-kicker">Business information</p><h1>Company profile</h1><p>Review the details submitted during registration.</p></div><span class="profile-status">Verification pending</span></div>
+      <div id="companyProfileDetails" class="profile-details"></div>
+    </section>
+  </section>
+</main>
+<section class="no-company-state wrap" id="noCompanyState" hidden>
+  <p class="section-kicker">Company workspace</p><h1>No company profile found</h1><p>Create a company profile first. This demo dashboard looks for a profile saved in this browser after registration.</p><a class="btn btn-primary" href="index.html">Create company profile</a>
+</section>
+
+<div id="listingDialog" class="listing-dialog-backdrop" aria-hidden="true">
+  <section class="listing-dialog" role="dialog" aria-modal="true" aria-labelledby="listingDialogTitle">
+    <button type="button" class="dialog-close" id="closeListingDialog" aria-label="Close listing form">×</button>
+    <p class="section-kicker">Material listing</p><h2 id="listingDialogTitle">Create a material listing</h2><p class="dialog-intro">Add a demo listing to see how your dashboard works. This listing will stay in this browser and will not be shown to other companies.</p>
+    <form id="listingForm" novalidate>
+      <div class="field"><label for="listingTitle">Material name *</label><input id="listingTitle" name="title" required placeholder="For example, aluminium offcuts"></div>
+      <div class="form-grid"><div class="field"><label for="listingType">Material category *</label><select id="listingType" name="type" required><option value="">Choose category</option><option>Metal</option><option>Plastic</option><option>Paper and packaging</option><option>Textile</option><option>Electronic materials</option><option>Other</option></select></div><div class="field"><label for="listingQuantity">Available quantity *</label><input id="listingQuantity" name="quantity" required placeholder="For example, 500 kg"></div><div class="field"><label for="listingPrice">Asking price (₹) *</label><input id="listingPrice" name="price" required type="number" min="0" step="0.01" placeholder="Price per unit or lot"></div><div class="field"><label for="listingLocation">Collection location *</label><input id="listingLocation" name="location" required placeholder="City, state"></div></div>
+      <div class="field"><label for="listingQuality">Quality / grade</label><input id="listingQuality" name="quality" placeholder="Grade, condition, contamination notes"></div>
+      <div class="field"><label for="listingDescription">Description *</label><textarea id="listingDescription" name="description" required placeholder="Describe the material and any handling requirements"></textarea></div>
+      <div class="listing-demo-note">Demo only. Do not upload regulated or hazardous materials for trade. Real listing moderation and compliance checks are not connected.</div>
+      <div class="dialog-actions"><button class="btn btn-secondary" id="cancelListing" type="button">Cancel</button><button class="btn btn-primary" type="submit">Save demo listing</button></div>
+    </form>
+  </section>
+</div>
+<div class="toast" id="dashToast" role="status" aria-live="polite"></div>
+<script src="dashboard.js" defer></script>
+</body>
+</html>
